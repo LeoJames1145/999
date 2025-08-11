@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+<meta content='#303643' name='theme-color'>
+<link href='/static/images/logo_icon.png' rel='icon' sizes='192x192'>
+<link href='/static/images/logo_icon.png' rel='apple-touch-icon' sizes='192x192'>
+<title>LinWin-Cloud/HackerStack: 提供前后端的一站式在线渗透测试平台,基于多个编程语言开发的软件。不仅仅是 界面炫酷，而且可以进行真实的社会工程学、木马、渗透辅助操作。这些都是真实的 而是是图形化可视的，主要面向 中职类 计算机专业、信息安全专业学生快速的完 成渗透测试学习、在线服务、渗透测试与信息收集实操. - Gitee.com</title>
+<meta charset='utf-8'>
+<meta content='always' name='referrer'>
+<meta content='Gitee' property='og:site_name'>
+<meta content='Object' property='og:type'>
+<meta content='https://gitee.com/LinWin-Cloud/hacker-stack/tree/master' property='og:url'>
+<meta content='https://foruda.gitee.com/avatar/1677216916524927283/10660010_linwin-cloud_1659667459.png' itemprop='image' property='og:image'>
+<meta content='LinWin-Cloud/HackerStack' itemprop='name' property='og:title'>
+<meta content='提供前后端的一站式在线渗透测试平台,基于多个编程语言开发的软件。不仅仅是 界面炫酷，而且可以进行真实的社会工程学、木马、渗透辅助操作。这些都是真实的 而是是图形化可视的，主要面向 中职类 计算机专业、信息安全专业学生快速的完 成渗透测试学习、在线服务、渗透测试与信息收集实操.' property='og:description'>
+<meta content='HackerStack' name='Keywords'>
+<meta content='Gitee.com（码云） 是 OSCHINA.NET 推出的代码托管平台，支持 Git 和 SVN，提供免费的私有仓库托管。目前已有超过 1350万的开发者选择 Gitee。' itemprop='description' name='Description'>
+<meta content='pc,mobile' name='applicable-device'>
+
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Yj6OBWC1rnmlFnoXXJqYD+dhq/KFLBjhvl3juOFz7AckjPe9W1pBt5VxKw0wuFv+uOaGY8LiI4em2UvtFzDgFw==" />
+
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://cn-assets.gitee.com/assets/favicon-9007bd527d8a7851c8330e783151df58.ico" />
+<script>
+//<![CDATA[
+window.gon = {};gon.locale="zh-CN";gon.sentry_dsn=null;gon.baidu_register_hm_push=null;gon.info={"controller_path":"mobile/tree","action_name":"show","current_user":false};gon.currentUser=null;gon.nothingTxt="啥也没有";gon.http_clone="https://gitee.com/LinWin-Cloud/hacker-stack.git";gon.user_project="LinWin-Cloud/hacker-stack";gon.manage_branch="管理分支";gon.manage_tag="管理标签";gon.enterprise_id=0;gon.create_reaction_path="/LinWin-Cloud/hacker-stack/reactions";gon.ipipe_base_url="https://go-api.gitee.com";gon.artifact_base_url="https://go-repo.gitee.com";gon.gitee_go_remote_url="https://go.gitee.com/assets";gon.gitee_go_active=false;gon.current_project_is_mirror=false;gon.show_repo_comment=false;gon.diagram_viewer_path="https://diagram-viewer.giteeusercontent.com";gon.ent_host="e.gitee.com";
+//]]>
+</script>
+<script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script>
+  var title = document.title.replace(/( - Gitee| - 码云)$/, '')
+      imgUrl = '';
+  
+  document.addEventListener('DOMContentLoaded', function(event) {
+    var imgUrlEl = document.querySelector('.readme-box .markdown-body > img, .readme-box .markdown-body :not(a) > img');
+    imgUrl = imgUrlEl && imgUrlEl.getAttribute('src');
+  
+    if (!imgUrl) {
+      imgUrlEl = document.querySelector('meta[itemprop=image]');
+      imgUrl = imgUrlEl && imgUrlEl.getAttribute('content');
+      imgUrl = imgUrl || "https://gitee.com/static/images/logo_themecolor_circle.png";
+    }
+  
+    wx.config({
+      debug: false,
+      appId: "wxff219d611a159737",
+      timestamp: "1754910680",
+      nonceStr: "390acc1e26f1d2b01c7b51eecd1fddb0",
+      signature: "500affb75958cfc12d650257ed6dfaf2b5ed5c2b",
+      jsApiList: [
+        'onMenuShareTimeline',
+        'onMenuShareAppMessage'
+      ]
+    });
+  
+    wx.ready(function () {
+      wx.onMenuShareTimeline({
+        title: title, // 分享标题
+        link: "https://gitee.com/LinWin-Cloud/hacker-stack/tree/master", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        imgUrl: imgUrl // 分享图标
+      });
+      wx.onMenuShareAppMessage({
+        title: title, // 分享标题
+        link: "https://gitee.com/LinWin-Cloud/hacker-stack/tree/master", // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+        desc: document.querySelector('meta[name=Description]').getAttribute('content'),
+        imgUrl: imgUrl // 分享图标
+      });
+    });
+    wx.error(function(res){
+      console.error('err', res)
+    });
+  })
+</script>
+
+
+<script>
+  !function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>540&&(b=540*i);var c=b/10;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){console.warn("将根据已有的meta标签来设置缩放比例");var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}if(!i&&!j){var p=a.navigator.userAgent,q=(!!p.match(/android/gi),!!p.match(/iphone/gi)),r=q&&!!p.match(/OS 9_3/),s=a.devicePixelRatio;i=q&&!r?s>=3&&(!i||i>=3)?3:s>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g)if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var t=e.createElement("div");t.appendChild(g),e.write(t.innerHTML)}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,300))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=12*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));
+</script>
+
+<script src="https://cn-assets.gitee.com/assets/mobile/application-e25e161362cf77797cd7dba4d6bafe25.js"></script>
+<link rel="stylesheet" media="all" href="https://cn-assets.gitee.com/assets/mobile/main-2ed662d835f46005dcda7c22efcd4ed8.css" />
+
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [["$$","$$"],["\\[","\\]"]],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+    ignoreClass: "container|files",
+    processClass: "markdown-body"
+  }
+});
+</script>
+<script src="https://cn-assets.gitee.com/uploads/resources/MathJax-2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<link rel="stylesheet" media="all" href="https://cn-assets.gitee.com/webpacks/css/gitee_nps-ae0dbee40f6ddc72015a.css" />
+<script src="https://cn-assets.gitee.com/webpacks/gitee_nps-03ff804099144a49b055.bundle.js"></script>
+<script src="https://cn-assets.gitee.com/webpacks/gitee_icons-522e3725c14e62fdcf2b.bundle.js"></script>
+</head>
+<body class='mobile'>
+<header class='gitee-nav'>
+<div class='gitee-nav__background'></div>
+<div class='left-side item side-slide-btn'>
+<i class='iconfont icon-mode-table'></i>
+</div>
+<div class='center item nav-title'>
+<a class="default nav-title-link" href="/"><img alt="Gitee - 基于 Git 的代码托管和研发协作平台" title="Gitee - 基于 Git 的代码托管和研发协作平台" class="light-mode-img" src="/static/images/logo-black.svg?t=158106664" />
+<img alt="Gitee - 基于 Git 的代码托管和研发协作平台" title="Gitee - 基于 Git 的代码托管和研发协作平台" class="dark-mode-img" src="/static/images/logo.svg?t=158106664" />
+</a></div>
+<div class='right-side item'>
+<span class='notifications'></span>
+</div>
+<div class='slider-box'>
+<div class='content'>
+<div class='top-area'>
+<div class='avatar-box'></div>
+<div class='buttons-box'>
+<a href="/login"><div class='button login fluid orange'>
+登录
+</div>
+</a><a href="/signup"><div class='button fluid register'>
+注册
+</div>
+</a></div>
+</div>
+<div class='middle-area'>
+<div class='action-list'>
+<ul>
+<li>
+<a href="/explore"><i class='iconfont icon-ic-discover'></i>
+<span class='item-name'>开源</span>
+</a></li>
+<li>
+<a href="/enterprises"><i class='iconfont icon-ic-enterprise'></i>
+<span class='item-name'>企业版</span>
+</a></li>
+<li>
+<a href="/education"><i class='iconfont icon-ic-education'></i>
+<span class='item-name'>高校版</span>
+</a></li>
+<li class='split-line'></li>
+<li>
+<a href="/search"><i class='iconfont icon-ic-search'></i>
+<span class='item-name'>搜索</span>
+</a></li>
+<li>
+<a href="/help"><i class='iconfont icon-help-circle'></i>
+<span class='item-name'>帮助中心</span>
+</a></li>
+<li>
+<a href="/terms"><i class='iconfont icon-file'></i>
+<span class='item-name'>使用条款</span>
+</a></li>
+<li>
+<a href="/about_us"><i class='iconfont icon-issuepx'></i>
+<span class='item-name'>关于我们</span>
+</a></li>
+<li class='theme-selector-mobile'>
+<a class="theme-selector-btn-mobile" onclick="toggleThemeSelectorMobile()" title="主题设置" href="javascript:void(0)"><i class='fa fa-moon-o' id='theme-icon-mobile'></i>
+<span class='item-name'>主题</span>
+<i class='fa fa-angle-down theme-arrow-mobile' id='theme-arrow-mobile'></i>
+</a><div class='theme-options-mobile' id='theme-options-mobile' style='display: none;'>
+<a class="theme-option-mobile" onclick="setTheme(&quot;system&quot;)" data-theme="system" id="theme-system-option-mobile" href="javascript:void(0)"><i class='fa fa-adjust' id='theme-system-icon-mobile'></i>
+<span class='item-name'>跟随系统</span>
+</a><a class="theme-option-mobile" onclick="setTheme(&quot;light&quot;)" data-theme="light" id="theme-light-option-mobile" href="javascript:void(0)"><i class='fa fa-sun-o' id='theme-light-icon-mobile'></i>
+<span class='item-name'>亮色模式</span>
+</a><a class="theme-option-mobile" onclick="setTheme(&quot;dark&quot;)" data-theme="dark" id="theme-dark-option-mobile" href="javascript:void(0)"><i class='fa fa-moon-o' id='theme-dark-icon-mobile'></i>
+<span class='item-name'>暗黑模式</span>
+</a></div>
+<li>
+<a rel="nofollow" data-method="delete" href="/logout"><i class='iconfont icon-ic-logout'></i>
+<span class='item-name'>退出
